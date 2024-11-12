@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Define o nome do arquivo .csv
+FILENAME="user_group.csv"
+
+# Cria o arquivo CSV e escreve o cabecalho e os dados
+cat <<EOF > $FILENAME
+Nome,Sobrenome,ID_User,Cargo,Grupo,Senha_inicial
+Alejandro,Rosalez,arosalez,Gerente de vendas,Vendas, Gerentes,Gen@123
+Efua,Owusu,eowusu,Expedicao,Expedicao,Gen@123
+Jane,Doe,jdoe,Expedicao,Expedicao,Gen@123
+Li,Juan,ljauan,Gerente de RH,RH, Gerentes,Gen@123
+Mary,Major,mmajor,Gerentes financeiro,Financa, Gerentes,Gen@123
+Mateo,Jackson,mjackson,CEO,CEO,Gen@123
+Nikki,Wolf,nwolf,Representante de vendas,Vendas,Gen@123
+Paulo,Santos,psantos,Expedicao,Expedicao,Gen@123
+Sofia,Martínez,smartinez,Especialista em RH,RH, Pessoal,Gen@123
+Saanvi,Sarkar,ssarkar,Especialista financeiro,Financa,Gen@123
+EOF
+
+echo "Arquivo $FILENAME criado com sucesso."
